@@ -9,4 +9,3 @@ pdftk A=crop.pdf cat Aeast output rotated.pdf
 pdftoppm -singlefile -scale-to 8000 -png rotated.pdf raster
 
 rm -f crop.pdf
-rm -f rotated.pdf
