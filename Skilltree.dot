@@ -1,28 +1,41 @@
 // Copyright © 2015 Martin Ueding <dev@martin-ueding.de>
 
-graph {
-    606;
+digraph {
+    node [shape=box style=filled]
+
+    606 [label="606 Advanced Quantum Theory" color=blue fillcolor=orange]
+    607 [label="607 Advanced Theoretical Physics" color=blue fillcolor=orange]
 
     // Elective lectures
-    760;
-    755;
-    758;
-    754;
+    760 [label="760 Computational Physics" color=blue fillcolor=green]
+    755 [label="755 Quantum Field Theory" color=red fillcolor=green]
+    758 [label="758 Quantum chromodynamics" color=green fillcolor=green]
+    754 [label="754 General Relativity and Cosmology" color=red fillcolor=green]
+    757 [label="757 Effective Field Theory" color=green fillcolor=green]
+    759 [label="759 Quantum Field Theory for Condensed Matter Physics" color=green fillcolor=green]
+
+    // [label="" color=red fillcolor=green]
 
     // Specialization 1
-    616;
-    615;
+    615 [label="615 Theoretical Particle Physics" color=blue fillcolor=blue]
+    616 [label="616 Theoretical Hadron Physics" color=blue fillcolor=blue]
+    617 [label="617 Theoretical Condensed Matter Physics" color=blue fillcolor=blue]
+
+    // Specialization 2
+    636 [label="636 Advanced Theoretical Particle Physics" color=blue fillcolor=blue]
+    637 [label="637 Advanced Theoretical Hadron Physics" color=blue fillcolor=blue]
+    638 [label="638 Advanced Theoretical Condensed Matter Physics" color=blue fillcolor=blue]
 
 
-    606 -- 755, 759;
-    751 -- 616, 615, 617;
-    755 -- 757, 758, 616, 615, 607, 761, 617;
-    754 -- 753;
-    615 -- 753, 637, 636, 752;
-    617 -- 762, 638, 756;
-    638 -- 767;
-    607 -- 752, 765, 767;
-    752 -- 763, 764;
+    606 -> 755, 759
+    751 -> 616, 615, 617
+    755 -> 757, 758, 616, 615, 607, 761, 617
+    754 -> 753
+    615 -> 753, 637, 636, 752
+    617 -> 762, 638, 756
+    638 -> 767
+    607 -> 752, 765, 767
+    752 -> 763, 764
 }
 
 // vim: cindent
