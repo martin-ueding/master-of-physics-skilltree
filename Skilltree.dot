@@ -3,8 +3,12 @@
 digraph {
     node [shape=box style=filled]
 
-    606 [label="606 Advanced Quantum Theory" color=blue fillcolor="#FF9A00"]
-    607 [label="607 Advanced Theoretical Physics" color=blue fillcolor=orange]
+    {
+        node[fillcolor="#FF9A00"]
+
+        606 [label="606 Advanced Quantum Theory" color=blue]
+        607 [label="607 Advanced Theoretical Physics" color=blue]
+    }
 
     // Elective lectures
     {
@@ -29,8 +33,6 @@ digraph {
         767 [label="767 Computational Methods in Condensed Matter Theory" color=green]
     }
 
-    // [label="" color=red fillcolor=green]
-
     // Specialization 1
     {
         node[fillcolor="#00CCFF"]
@@ -45,8 +47,15 @@ digraph {
     }
 
 
-    // Seminar #FFFF00
-    // Thesis #CC9AFF
+    // Seminar
+    {
+        node[fillcolor="#FFFF00"]
+    }
+
+    // Thesis
+    {
+        node[fillcolor="#CC9AFF"]
+    }
 
     606 -> 755, 759
     751 -> 616, 615, 617
