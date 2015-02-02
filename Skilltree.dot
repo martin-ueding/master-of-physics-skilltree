@@ -7,12 +7,23 @@ digraph {
     607 [label="607 Advanced Theoretical Physics" color=blue fillcolor=orange]
 
     // Elective lectures
-    760 [label="760 Computational Physics" color=blue fillcolor=green]
-    755 [label="755 Quantum Field Theory" color=red fillcolor=green]
-    758 [label="758 Quantum chromodynamics" color=green fillcolor=green]
+    751 [label="751 Group Theory" color=blue fillcolor=green]
+    752 [label="752 Superstring Theory" color=blue fillcolor=green]
+    753 [label="753 Theoretical Particle Astrophysics" color=red fillcolor=green]
     754 [label="754 General Relativity and Cosmology" color=red fillcolor=green]
+    755 [label="755 Quantum Field Theory" color=red fillcolor=green]
+    756 [label="756 Critical Phenomena" color=red fillcolor=green]
     757 [label="757 Effective Field Theory" color=green fillcolor=green]
+    758 [label="758 Quantum chromodynamics" color=green fillcolor=green]
     759 [label="759 Quantum Field Theory for Condensed Matter Physics" color=green fillcolor=green]
+    760 [label="760 Computational Physics" color=blue fillcolor=green]
+    761 [label="761 Supersymmetry" color=green fillcolor=green]
+    762 [label="762 Transport in mesoscopic systems" color=green fillcolor=green]
+    763 [label="763 Advanced Topics in String Theory" color=red fillcolor=green]
+    764 [label="764 Advanced Topics in Field and String Theory" color=red fillcolor=green]
+    765 [label="765 Advanced Topics in Quantum Field Theory" color=red fillcolor=green]
+    766 [label="766 Physics of the Higgs Boson" color=blue fillcolor=green]
+    767 [label="767 Computational Methods in Condensed Matter Theory" color=green fillcolor=green]
 
     // [label="" color=red fillcolor=green]
 
@@ -31,7 +42,8 @@ digraph {
     751 -> 616, 615, 617
     755 -> 757, 758, 616, 615, 607, 761, 617
     754 -> 753
-    615 -> 753, 637, 636, 752
+    615 -> 753, 636, 752, 766
+    616 -> 637
     617 -> 762, 638, 756
     638 -> 767
     607 -> 752, 765, 767
