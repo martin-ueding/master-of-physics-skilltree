@@ -1,6 +1,10 @@
 # Copyright © 2015 Martin Ueding <dev@martin-ueding.de>
 
-all: Skilltree-Bachelor-2006-dot.pdf Skilltree-Master-2014-dot.pdf Skilltree-Master-2014-neato.pdf
+dot = $(wildcard *.dot)
+dot_pdf = $(dot:.dot=-dot.pdf)
+neato_pdf = $(dot:.dot=-neato.pdf)
+
+all: $(dot_pdf) $(neato_pdf)
 
 %-dot.pdf: %.dot
 	dot -Tpdf -o $@ $^
