@@ -4,18 +4,55 @@ digraph {
     node [shape=box style=filled]
 
     subgraph cluster_bachelor {
-        111
-        112
 
-        121
-        131
 
-        141
-        450
 
-        541
-        542
-        590
+        {
+            node[fillcolor="#00CCFF"]
+            111
+            211
+            311
+            411
+            511
+
+            112
+            212
+            312
+            313
+            412
+            512
+
+            131
+        }
+        {
+            node[fillcolor="#FF9A00"]
+            141
+            241
+            341
+        }
+        {
+            node[fillcolor="#65FF65"]
+            221
+            321
+            421
+            521
+
+            441
+        }
+        {
+            node[fillcolor="#FFFF00"]
+            121
+            450
+
+            531
+            532
+
+            541
+            542
+
+            590
+        }
+            
 
 
         111 -> 112
@@ -38,8 +75,8 @@ digraph {
         411, 421, 511 -> 512
         341, 421, 411 -> 521
 
-        111, 211, 311, 411 -> 531
-        221, 321, 421, 521 -> 532
+        311 -> 531
+        421 -> 532
     }
 
     subgraph cluster_master_theory {
