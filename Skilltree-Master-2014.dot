@@ -61,6 +61,7 @@ digraph {
             766 [label="766 Physics of the Higgs Boson (T)" color=blue]
             767 [label="767 Computational Methods in Condensed Matter Theory (T)" color=green]
             768 [label="768 General Relativity for Experimentalists (T)"]
+            769 [label="769 Lattice QCD (T)"]
             771 [label="771 Environmental Physics & Energy Physics (A)" color=blue]
             772 [label="772 Physics in Medicine 1: Fundamentals of Analyzing Biomedial Signals (A)" color=blue]
             773 [label="773 Physics in Medicine 2: Fundamentals of Medical Imaging (A)" color=red]
