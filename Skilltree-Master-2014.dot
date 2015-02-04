@@ -50,7 +50,7 @@ digraph {
             618 [label="618 Physics of Particle Detectors", color=blue]
             620 [label="620 Advanced Atomic, Molecular, and Optical Physics", color=blue]
             CondMatter1 [label="Condensed Matter Physics 1" color=blue]
-            MolPhys_1 [label="Molecular Physics 1" color=blue]
+            MolPhys1 [label="Molecular Physics 1" color=blue]
         }
 
         // Specialization: Advanced Experimental Physics
@@ -63,7 +63,7 @@ digraph {
             634 [label="634 Magnetism/Superconductivity", color=red]
             639 [label="639 Advanced Topics in High Energy Particle Physics", color=red]
             640 [label="640 Photonic Devices", color=red]
-            MolPhys_2 [label="Molecular Physics 2" color=red]
+            MolPhys2 [label="Molecular Physics 2" color=red]
         }
 
         // Specialization: Theoretical Physics
@@ -155,6 +155,8 @@ digraph {
     607, 638 -> 767
     321 -> 768
     755 -> 769
+
+    MolPhys1 -> MolPhys2
 }
 
 // vim: autoindent
