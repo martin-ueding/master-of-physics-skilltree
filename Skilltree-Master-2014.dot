@@ -82,6 +82,35 @@ digraph {
             799 [label="799 Internships in the Research Groups"]
         }
 
+
+        // Elective Advanced Lectures: BCGS Courses
+        {
+            "Nuclear Physics 1 (E)"
+            node[fillcolor=green]
+            // Winter
+            {
+                node[color=blue]
+                "Relativity and Cosmology 1 (T)"
+                "Nuclear Physics 1 (E)" -> "Nuclear Physics 2 (E)"
+                "Magnetism (E/A)"
+                "Experimental methods in condensed matter physics (E/A)"
+            }
+            // Summer
+            {
+                node[color=red]
+                "Relativity and Cosmology 1 (T)" -> "Relativity and Cosmology 2 (T)"
+                "Quantum Field Theory 1 (T)" -> "Quantum Field Theory 2 (T)"
+                "Geometry in Physics (T)"
+                "Topology for Physicists (T)"
+                "Nuclear Physics 1 (E)" -> "Physics of Detectors (E/A)"
+                "Particle physics (E)"
+                "Groundbreaking experiments in nuclear physics (E)"
+                "Condensed Matter Physics 2 (E)"
+                "Semiconductor Physics and Nanoscience (E/A)"
+                "Superconductivity (E/A)"
+            }
+        }
+
         // Specialization: Experimental Physics
         {
             node[fillcolor="#00CCFF" color=blue]
