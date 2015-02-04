@@ -13,11 +13,11 @@ digraph {
         511 [label="511 Physik 5"]
 
         112 [label="112 Praktikum 1"]
-        212 [label="212 Praktikum 1"]
-        312 [label="312 Praktikum 1"]
-        313 [label="313 Praktikum 1"]
-        412 [label="412 Praktikum 1"]
-        512 [label="512 Praktikum 1"]
+        212 [label="212 Praktikum 2"]
+        312 [label="312 Praktikum 3"]
+        313 [label="313 Elektronikpraktikum"]
+        412 [label="412 Praktikum 4"]
+        512 [label="512 Praktikum 5"]
 
         131 [label="131 EDV"]
     }
