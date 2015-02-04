@@ -5,6 +5,7 @@ digraph {
     ranksep = 1.0
     overlap = false
     splines = true
+    rankdir = LR
 
     node [shape=box style=filled]
 
