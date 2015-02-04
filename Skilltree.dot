@@ -4,9 +4,6 @@ digraph {
     node [shape=box style=filled]
 
     subgraph cluster_bachelor {
-
-
-
         {
             node[fillcolor="#00CCFF"]
             111
@@ -53,6 +50,61 @@ digraph {
             590
         }
             
+        {
+            rank = same
+
+            111
+            141
+            121
+            131
+        }
+        {
+            rank = same
+
+            211
+            112
+            241
+            221
+        }
+        {
+            rank = same
+
+            311
+            212
+            341
+            321
+        }
+        {
+            rank = same
+
+            312
+        }
+        {
+            rank = same
+
+            411
+            313
+            441
+            421
+            450
+        }
+        {
+            rank = same
+
+            511
+            412
+            521
+            531
+            541
+            590
+        }
+        {
+            rank = same
+
+            512
+            532
+            542
+        }
 
 
         111 -> 112
@@ -77,6 +129,8 @@ digraph {
 
         311 -> 531
         421 -> 532
+
+        590 -> 542;
     }
 
     subgraph cluster_master_theory {
