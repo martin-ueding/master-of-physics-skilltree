@@ -17,7 +17,7 @@ digraph {
         511 [label="511 Experimenal 5: Particles & Nuclei"]
         521 [label="521 Theory 4: Thermodynamics & Statistical Physics"]
 
-        311 -> 411
+        311 -> 511
         321 -> 421
         421 -> 521
     }
