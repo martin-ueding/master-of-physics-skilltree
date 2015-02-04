@@ -3,6 +3,8 @@
 digraph {
     nodesep = .50
     ranksep = 1.0
+    overlap = false
+    splines = true
 
     node [shape=box style=filled]
 
@@ -72,29 +74,30 @@ digraph {
 
         // Specialization: Experimental Physics
         {
-            node[fillcolor="#00CCFF"]
+            node[fillcolor="#00CCFF" color=blue]
 
-            611 [label="611 Particle Physics", color=blue]
-            612 [label="612 Accelerator Physics", color=blue]
-            613 [label="613 Condensed Matter Physics", color=blue]
-            614 [label="614 Laser Physics and Nonlinear Optics", color=blue]
-            618 [label="618 Physics of Particle Detectors", color=blue]
-            620 [label="620 Advanced Atomic, Molecular, and Optical Physics", color=blue]
-            CondMatter1 [label="Condensed Matter Physics 1" color=blue]
-            MolPhys1 [label="Molecular Physics 1" color=blue]
+            611 [label="611 Particle Physics"]
+            612 [label="612 Accelerator Physics"]
+            613 [label="613 Condensed Matter Physics"]
+            614 [label="614 Laser Physics and Nonlinear Optics"]
+            618 [label="618 Physics of Particle Detectors"]
+            620 [label="620 Advanced Atomic, Molecular, and Optical Physics"]
+            CondMatter1 [label="Condensed Matter Physics 1"]
+            MolPhys1 [label="Molecular Physics 1"]
+
         }
 
         // Specialization: Advanced Experimental Physics
         {
-            node[fillcolor="#00CCFF"]
+            node[fillcolor="#00CCFF", color=red]
 
-            631 [label="631 Quantum Optics", color=red]
-            632 [label="632 Physics of Hadrons", color=red]
-            633 [label="633 High Energy Collider Physics", color=red]
-            634 [label="634 Magnetism/Superconductivity", color=red]
-            639 [label="639 Advanced Topics in High Energy Particle Physics", color=red]
-            640 [label="640 Photonic Devices", color=red]
-            MolPhys2 [label="Molecular Physics 2" color=red]
+            631 [label="631 Quantum Optics"]
+            632 [label="632 Physics of Hadrons"]
+            633 [label="633 High Energy Collider Physics"]
+            634 [label="634 Magnetism/Superconductivity"]
+            639 [label="639 Advanced Topics in High Energy Particle Physics"]
+            640 [label="640 Photonic Devices"]
+            MolPhys2 [label="Molecular Physics 2"]
         }
 
         // Specialization: Theoretical Physics
@@ -168,8 +171,8 @@ digraph {
     511 -> 775
     421 -> 742
     421 -> 751
-    7501, 616 -> 752
-    754, 616 -> 753
+    7501, 615 -> 752
+    754, 615 -> 753
     321 -> 754
     606 -> 755
     618 -> 756
@@ -181,7 +184,7 @@ digraph {
     752 -> 763
     752 -> 764
     7501 -> 765
-    616 -> 766
+    615 -> 766
     755 -> 7501
     638 -> 767
     321 -> 768

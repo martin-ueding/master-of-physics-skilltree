@@ -2,6 +2,6 @@
 
 all: Skilltree-Bachelor-2006.pdf Skilltree-Master-2014.pdf
 
-
 %.pdf: %.dot
 	dot -Tpdf -o $@ $^
+	neato -Tpdf -o $@-neato.pdf $^

@@ -3,6 +3,8 @@
 digraph {
     nodesep = .50
     ranksep = 1.0
+    overlap = false
+    splines = true
 
     node [shape=box style=filled]
 
