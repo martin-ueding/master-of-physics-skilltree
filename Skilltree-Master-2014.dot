@@ -85,7 +85,7 @@ digraph {
 
         // Elective Advanced Lectures: BCGS Courses
         {
-            node[fillcolor=green]
+            node[fillcolor="#65FF65"]
 
             "Nuclear Physics 1 (E)"
             "Optical Spectroscopy (E/A)"
