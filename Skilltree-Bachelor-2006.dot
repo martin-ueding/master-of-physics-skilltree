@@ -41,7 +41,7 @@ digraph {
     }
     {
         node[fillcolor="#FFFF00"]
-        121 [label="121 Nebenfach"]
+        120 [label="120 Nebenfach"]
         450 [label="450 Wahlpflicht"]
 
         531 [label="531 Prüfung Experiment"]
@@ -58,7 +58,7 @@ digraph {
 
         111
         141
-        121
+        120
         131
     }
     {
