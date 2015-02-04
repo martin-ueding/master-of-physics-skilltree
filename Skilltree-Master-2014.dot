@@ -85,19 +85,27 @@ digraph {
 
         // Elective Advanced Lectures: BCGS Courses
         {
-            "Nuclear Physics 1 (E)"
             node[fillcolor=green]
+
+            "Nuclear Physics 1 (E)"
+            "Optical Spectroscopy (E/A)"
+
             // Winter
             {
                 node[color=blue]
+
                 "Relativity and Cosmology 1 (T)"
                 "Nuclear Physics 1 (E)" -> "Nuclear Physics 2 (E)"
                 "Magnetism (E/A)"
                 "Experimental methods in condensed matter physics (E/A)"
+                "Physics of Surfaces and Nanostructures (E/A)"
+                "Probability theory and stochastic processes for physicists (T)"
             }
+
             // Summer
             {
                 node[color=red]
+
                 "Relativity and Cosmology 1 (T)" -> "Relativity and Cosmology 2 (T)"
                 "Quantum Field Theory 1 (T)" -> "Quantum Field Theory 2 (T)"
                 "Geometry in Physics (T)"
@@ -108,6 +116,14 @@ digraph {
                 "Condensed Matter Physics 2 (E)"
                 "Semiconductor Physics and Nanoscience (E/A)"
                 "Superconductivity (E/A)"
+                "Introduction to neutron scattering (E/A)"
+                "Astrochemistry (E/A)"
+                "Fundamentals of Molecular Symmetry (E/A/T)"
+                "Physical Biology (T/A)"
+                "Statistical physics of soft matter and biomolecules (T/A)"
+                "Statistical physics far from equilibrium (T)"
+                "Disordered systems (T)"
+                "Nonequilibrium physics with interdisciplinary applications (T)"
             }
         }
 
