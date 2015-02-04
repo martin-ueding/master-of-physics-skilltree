@@ -9,18 +9,22 @@ digraph {
     subgraph cluster_course_phase {
         601 [label="601 Advanced Laboratory Course" fillcolor="#66FFCC"]
 
-        606 [label="606 Advanced Quantum Theory" color=blue fillcolor="#FF9A00"]
+        {
+            node[fillcolor="#FF9A00"]
+
+            606 [label="606 Advanced Quantum Theory" color=blue]
+        }
 
         // Elective Advanced Lectures
         {
             node[fillcolor="#65FF65"]
 
-            7501 [label="7501 Advanced Quantum Field Theory" color=blue]
-            751 [label="751 Group Theory" color=blue]
+            7501 [label="7501 Advanced Quantum Field Theory (T)" color=blue]
+            751 [label="751 Group Theory (T)" color=blue]
             752 [label="752 Superstring Theory" color=blue]
             753 [label="753 Theoretical Particle Astrophysics" color=red]
-            754 [label="754 General Relativity and Cosmology" color=red]
-            755 [label="755 Quantum Field Theory" color=red]
+            754 [label="754 General Relativity and Cosmology (T)" color=red]
+            755 [label="755 Quantum Field Theory (T)" color=red]
             756 [label="756 Critical Phenomena" color=red]
             757 [label="757 Effective Field Theory" color=green]
             758 [label="758 Quantum chromodynamics" color=green]
@@ -42,8 +46,10 @@ digraph {
             612 [label="612 Accelerator Physics", color=blue]
             618 [label="618 Physics of Particle Detectors", color=blue]
             613 [label="613 Condensed Matter Physics", color=blue]
+            CondMatter1 [label="Condensed Matter Physics 1" color=blue]
             614 [label="614 Laser Physics and Nonlinear Optics", color=blue]
             620 [label="620 Advanced Atomic, Molecular, and Optical Physics", color=blue]
+            MolPhys_1 [label="Molecular Physics 1" color=blue]
         }
 
         // Specialization: Advanced Experimental Physics
@@ -133,6 +139,14 @@ digraph {
     755 -> 758
     606, 521 -> 759
     755 -> 761
+    606, 617 -> 762
+    607, 616, 752 -> 763
+    607, 752 -> 764
+    607 -> 765
+    616 -> 766
+    607, 638 -> 767
+    321 -> 768
+    755 -> 769
 }
 
 // vim: autoindent
