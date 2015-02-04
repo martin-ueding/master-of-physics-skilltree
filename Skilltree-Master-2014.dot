@@ -1,77 +1,90 @@
 // Copyright © 2015 Martin Ueding <dev@martin-ueding.de>
 
 digraph {
+    nodesep = .50
+    ranksep = 1.0
+
     node [shape=box style=filled]
 
-    {
-        node[fillcolor="#FF9A00"]
+    subgraph cluster_course_phase {
+        601 [label="601 Advanced Laboratory Course" fillcolor="#66FFCC"]
 
-        606 [label="606 Advanced Quantum Theory" color=blue]
-        607 [label="607 Advanced Theoretical Physics" color=blue]
+        606 [label="606 Advanced Quantum Theory" color=blue fillcolor="#FF9A00"]
+
+        // Elective Advanced Lectures
+        {
+            node[fillcolor="#65FF65"]
+
+            607 [label="607 Advanced Theoretical Physics" color=blue]
+            751 [label="751 Group Theory" color=blue]
+            752 [label="752 Superstring Theory" color=blue]
+            753 [label="753 Theoretical Particle Astrophysics" color=red]
+            754 [label="754 General Relativity and Cosmology" color=red]
+            755 [label="755 Quantum Field Theory" color=red]
+            756 [label="756 Critical Phenomena" color=red]
+            757 [label="757 Effective Field Theory" color=green]
+            758 [label="758 Quantum chromodynamics" color=green]
+            759 [label="759 Quantum Field Theory for Condensed Matter Physics" color=green]
+            760 [label="760 Computational Physics" color=blue]
+            761 [label="761 Supersymmetry" color=green]
+            762 [label="762 Transport in mesoscopic systems" color=green]
+            763 [label="763 Advanced Topics in String Theory" color=red]
+            764 [label="764 Advanced Topics in Field and String Theory" color=red]
+            765 [label="765 Advanced Topics in Quantum Field Theory" color=red]
+            766 [label="766 Physics of the Higgs Boson" color=blue]
+            767 [label="767 Computational Methods in Condensed Matter Theory" color=green]
+        }
+
+        // Specialization
+        {
+            node[fillcolor="#00CCFF"]
+
+            615 [label="615 Theoretical Particle Physics" color=blue]
+            616 [label="616 Theoretical Hadron Physics" color=blue]
+            617 [label="617 Theoretical Condensed Matter Physics" color=blue]
+
+            636 [label="636 Advanced Theoretical Particle Physics" color=red]
+            637 [label="637 Advanced Theoretical Hadron Physics" color=red]
+            638 [label="638 Advanced Theoretical Condensed Matter Physics" color=red]
+        }
+
+
+        // Seminar
+        {
+            node[fillcolor="#FFFF00"]
+        }
+
+        606 -> 755, 759
+        751 -> 616, 615, 617
+        755 -> 757, 758, 616, 615, 607, 761, 617
+        754 -> 753
+        615 -> 753, 636, 752, 766
+        616 -> 637
+        617 -> 762, 638, 756
+        638 -> 767
+        607 -> 752, 765, 767
+        752 -> 763, 764
     }
 
-    // Elective lectures
-    {
-        node[fillcolor="#65FF65"]
+    subgraph cluster_research_phase {
+        // Thesis Preparation
+        {
+            node[fillcolor="#8DB4E2"]
 
-        751 [label="751 Group Theory" color=blue]
-        752 [label="752 Superstring Theory" color=blue]
-        753 [label="753 Theoretical Particle Astrophysics" color=red]
-        754 [label="754 General Relativity and Cosmology" color=red]
-        755 [label="755 Quantum Field Theory" color=red]
-        756 [label="756 Critical Phenomena" color=red]
-        757 [label="757 Effective Field Theory" color=green]
-        758 [label="758 Quantum chromodynamics" color=green]
-        759 [label="759 Quantum Field Theory for Condensed Matter Physics" color=green]
-        760 [label="760 Computational Physics" color=blue]
-        761 [label="761 Supersymmetry" color=green]
-        762 [label="762 Transport in mesoscopic systems" color=green]
-        763 [label="763 Advanced Topics in String Theory" color=red]
-        764 [label="764 Advanced Topics in Field and String Theory" color=red]
-        765 [label="765 Advanced Topics in Quantum Field Theory" color=red]
-        766 [label="766 Physics of the Higgs Boson" color=blue]
-        767 [label="767 Computational Methods in Condensed Matter Theory" color=green]
+            910 [label="910 Scientific Exploration of the Master thesis topic"]
+            920 [label="920 Methods and Projects Planning"]
+        }
+
+        // Thesis
+        {
+            node[fillcolor="#538DD5"]
+
+            930 [label="930 Master Thesis"]
+        }
+
+        910, 920 -> 930
     }
 
-    // Specialization 1
-    {
-        node[fillcolor="#00CCFF"]
-
-        615 [label="615 Theoretical Particle Physics" color=blue]
-        616 [label="616 Theoretical Hadron Physics" color=blue]
-        617 [label="617 Theoretical Condensed Matter Physics" color=blue]
-    }
-
-    // Specialization 2
-    {
-        node[fillcolor="#00CCFF"]
-
-        636 [label="636 Advanced Theoretical Particle Physics" color=red]
-        637 [label="637 Advanced Theoretical Hadron Physics" color=red]
-        638 [label="638 Advanced Theoretical Condensed Matter Physics" color=red]
-    }
-
-
-    // Seminar
-    {
-        node[fillcolor="#FFFF00"]
-    }
-
-    // Thesis
-    {
-        node[fillcolor="#CC9AFF"]
-    }
-
-    606 -> 755, 759
-    751 -> 616, 615, 617
-    755 -> 757, 758, 616, 615, 607, 761, 617
-    754 -> 753
-    615 -> 753, 636, 752, 766
-    616 -> 637
-    617 -> 762, 638, 756
-    638 -> 767
-    607 -> 752, 765, 767
-    752 -> 763, 764
 }
 
 // vim: autoindent
