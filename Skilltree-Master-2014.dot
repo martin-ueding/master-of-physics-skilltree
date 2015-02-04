@@ -9,6 +9,15 @@ digraph {
 
     node [shape=box style=filled]
 
+    {
+        311 [label="311 Experimental 3: Optics"]
+        313 [label="313 Electronics Lab"]
+        321 [label="321 Theory 2: Electromagnetism"]
+        421 [label="421 Theory 3: Quantum Mechanics"]
+        511 [label="511 Experimenal 5: Particles & Nuclei"]
+        521 [label="521 Theory 4: Thermodynamics & Statistical Physics"]
+    }
+
     subgraph cluster_course_phase {
         601 [label="601 Advanced Laboratory Course" fillcolor="#66FFCC"]
 
