@@ -18,4 +18,4 @@ clean:
 	neato -Tpdf -o $@ $^
 
 %.png: %.pdf
-	pdftoppm -png -singlefile -r 100 $^ $(@:.png=)
+	pdftoppm -png -singlefile -r 50 $^ $(@:.png=)
