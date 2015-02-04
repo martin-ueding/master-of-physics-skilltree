@@ -1,7 +1,7 @@
 // Copyright © 2015 Martin Ueding <dev@martin-ueding.de>
 
 digraph {
-    nodesep = .50
+    //nodesep = .50
     ranksep = 1.0
     overlap = false
     splines = true
