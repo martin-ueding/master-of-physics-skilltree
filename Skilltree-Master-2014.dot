@@ -99,7 +99,7 @@ digraph {
                 "Magnetism (E/A)"
                 "Experimental methods in condensed matter physics (E/A)"
                 "Physics of Surfaces and Nanostructures (E/A)"
-                "Probability theory and stochastic processes for physicists (T)"
+                521 -> "Probability theory and stochastic processes for physicists (T)"
             }
 
             // Summer
@@ -117,13 +117,13 @@ digraph {
                 "Semiconductor Physics and Nanoscience (E/A)"
                 "Superconductivity (E/A)"
                 "Introduction to neutron scattering (E/A)"
-                "Astrochemistry (E/A)"
-                "Fundamentals of Molecular Symmetry (E/A/T)"
+                MolPhys1 -> "Astrochemistry (E/A)"
+                421 -> "Fundamentals of Molecular Symmetry (E/A/T)"
                 "Physical Biology (T/A)"
                 "Statistical physics of soft matter and biomolecules (T/A)"
                 "Statistical physics far from equilibrium (T)"
                 "Disordered systems (T)"
-                "Nonequilibrium physics with interdisciplinary applications (T)"
+                521 -> "Nonequilibrium physics with interdisciplinary applications (T)"
             }
         }
 
