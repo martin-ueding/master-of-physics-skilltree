@@ -37,6 +37,35 @@ digraph {
             765 [label="765 Advanced Topics in Quantum Field Theory" color=red]
             766 [label="766 Physics of the Higgs Boson" color=blue]
             767 [label="767 Computational Methods in Condensed Matter Theory" color=green]
+
+            711 [label="711 Particle Astrophysics and Cosmology (E)" color=blue]
+            712 [label="712 Advanced Electronics and Signal Processing (E/A)" color=red]
+            713 [label="713 Particle Detectors and Instrumentation (E/A)" color=red]
+            714 [label="714 Advanced Accelerator Physics (E/A)" color=green]
+            715 [label="715 Experiments on the Structure of Hadrons (E)" color=blue]
+            716 [label="716 Statistical Methods of Data Analysis (E)" color=red]
+            717 [label="717 High Energy Physics Lab (E)"]
+            718 [label="718 C++ Programming in High Energy Physics (E/A)" color=red]
+            719 [label="719 Intensive Week: Advanced Topics in High Energy Physics (E)"]
+            720 [label="720 Physics with Antiprotons (E)" color=blue]
+            721 [label="721 Intensive Week: Advanced Topics in Hadron Physics (E)"]
+            722 [label="722 Advanced Gaseous Detectors -- Theory and Practice (E)" color=red]
+            731 [label="731 Low Temperature Physics (E/A)"]
+            732 [label="732 Optics Lab (E/A)"]
+            734 [label="734 Holography (E/A)" color=red]
+            735 [label="735 Laser Cooling and Matter Waves (E)"]
+            736 [label="736 Crystal Optics (E/A)" color=blue]
+            737 [label="737 Intensive Week: Advanced Topics in Photonics and Quantum Optics (E)"]
+            738 [label="738 Lecture on Advanced Topics in Quantum Optics (E)"]
+            739 [label="739 Lecture on Advanced Topics in Photonics (E)"]
+            740 [label="740 Hands-on Seminar: Experimental Optics and Atomic Physics (E/A)"]
+            741 [label="741 Modern Spectroscopy (E/A)"]
+            742 [label="742 Ultracold Atomic Gases (E/T)"]
+            799 [label="799 Internships in the Research Groups"]
+            771 [label="771 Environmental Physics & Energy Physics (A)" color=blue]
+            772 [label="772 Physics in Medicine 1: Fundamentals of Analyzing Biomedial Signals (A)" color=blue]
+            773 [label="773 Physics in Medicine 2: Fundamentals of Medical Imaging (A)" color=red]
+            774 [label="774 Electronics for Physicists (E/A)" color=red]
         }
 
         // Specialization: Experimental Physics
@@ -124,7 +153,6 @@ digraph {
     617 -> 638
 
     611 -> 711
-    612 -> 714
     511 -> 715
     611, 618 -> 717
     511 -> 720
@@ -138,7 +166,7 @@ digraph {
     511 -> 775
     421 -> 742
     421 -> 751
-    607, 616 -> 752
+    7501, 616 -> 752
     754, 616 -> 753
     321 -> 754
     606 -> 755
@@ -148,11 +176,12 @@ digraph {
     606, 521 -> 759
     755 -> 761
     606, 617 -> 762
-    607, 616, 752 -> 763
-    607, 752 -> 764
-    607 -> 765
+    7501, 616, 752 -> 763
+    7501, 752 -> 764
+    7501 -> 765
     616 -> 766
-    607, 638 -> 767
+    755 -> 7501
+    7501, 638 -> 767
     321 -> 768
     755 -> 769
 
