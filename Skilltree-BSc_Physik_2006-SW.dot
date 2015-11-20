@@ -1,0 +1,134 @@
+// Copyright © 2015 Martin Ueding <dev@martin-ueding.de>
+
+digraph {
+    nodesep = .50
+    ranksep = 1.0
+    overlap = false
+    splines = true
+    rankdir = LR
+
+    node [shape=box style=filled, fillcolor="#EEEEEE"]
+
+    {
+        111 [label="111 Physik 1"]
+        211 [label="211 Physik 2", fillcolor="#00CCFF"]
+        311 [label="311 Physik 3"]
+        411 [label="411 Physik 4", fillcolor="#00CCFF"]
+        511 [label="511 Physik 5"]
+
+        112 [label="112 Praktikum 1"]
+        212 [label="212 Praktikum 2"]
+        312 [label="312 Praktikum 3"]
+        313 [label="313 Elektronikpraktikum"]
+        412 [label="412 Praktikum 4"]
+        512 [label="512 Praktikum 5", fillcolor="#00CCFF"]
+
+        131 [label="131 EDV"]
+    }
+    {
+        141 [label="141 Mathematik 1"]
+        241 [label="241 Mathematik 2"]
+        341 [label="341 Mathematik 3"]
+    }
+    {
+        221 [label="221 Theorie 1"]
+        321 [label="321 Theorie 2"]
+        421 [label="421 Theorie 3", fillcolor="#65FF65"]
+        521 [label="521 Theorie 4", fillcolor="#65FF65"]
+
+        441 [label="441 Numerik"]
+    }
+    {
+        120 [label="120 Nebenfach", fillcolor="#FFFF00"]
+        450 [label="450 Wahlpflicht", fillcolor="#FFFF00"]
+
+        531 [label="531 Prüfung Experiment", fillcolor="#FFFF00"]
+        532 [label="532 Prüfung Theorie", fillcolor="#FFFF00"]
+
+        541 [label="541 Proseminar Präsentation", fillcolor="#FFFF00"]
+        542 [label="542 Seminar Bachelorarbeit", fillcolor="#FFFF00"]
+
+        590 [label="590 Bachelorarbeit", fillcolor="#FFFF00"]
+    }
+        
+    // Sommer
+    {
+        rank = same
+
+
+        112
+        120
+        211
+        221
+        241
+        312
+        313
+        411
+        421
+        441
+
+
+
+    }
+
+    // Winter
+    {
+        rank = same
+
+
+        111
+        131
+        141
+        212
+        311
+        321
+        341
+        511
+        521
+
+    }
+
+    // egal
+    {
+        rank = same
+
+        412
+        450
+        512
+        531
+        532
+        541
+        542
+        590
+
+
+
+
+    }
+
+
+    111 -> 112
+    111 -> 211
+    141 -> 241
+    141, 111 -> 221
+    211 -> 212
+    211 -> 311
+    211 -> 313
+    241 -> 341
+    241, 221, 211 -> 321
+    311 -> 312
+    311, 141 -> 441
+    311, 321 -> 411
+    341, 321, 311 -> 421
+    421, 411 -> 521
+    411 -> 412
+    411, 421 -> 511
+    511 -> 512
+
+    311 -> 531
+    421 -> 532
+
+    590 -> 542;
+}
+
+// vim: autoindent
